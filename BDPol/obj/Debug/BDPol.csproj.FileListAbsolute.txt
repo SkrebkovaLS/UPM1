@@ -1,0 +1,11 @@
+C:\Users\Лиза\source\repos\BDPol\bin\Debug\BDPol.exe.config
+C:\Users\Лиза\source\repos\BDPol\bin\Debug\BDPol.exe
+C:\Users\Лиза\source\repos\BDPol\bin\Debug\BDPol.pdb
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.csprojAssemblyReference.cache
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.Form1.resources
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.Properties.Resources.resources
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.csproj.GenerateResource.cache
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.csproj.CoreCompileInputs.cache
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.exe
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.pdb
+C:\Users\Лиза\source\repos\BDPol\obj\Debug\BDPol.Form2.resources
