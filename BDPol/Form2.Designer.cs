@@ -37,7 +37,7 @@ namespace BDPol
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Plot = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -119,7 +119,7 @@ namespace BDPol
             this.g.Controls.Add(this.button2);
             this.g.Controls.Add(this.button1);
             this.g.Controls.Add(this.label1);
-            this.g.Controls.Add(this.textBox1);
+            this.g.Controls.Add(this.Plot);
             this.g.Location = new System.Drawing.Point(10, 48);
             this.g.Name = "g";
             this.g.Padding = new System.Windows.Forms.Padding(3);
@@ -130,9 +130,12 @@ namespace BDPol
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(14, 321);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 102;
             this.dataGridView1.RowTemplate.Height = 40;
             this.dataGridView1.Size = new System.Drawing.Size(1669, 580);
@@ -146,7 +149,6 @@ namespace BDPol
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(275, 39);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -187,13 +189,12 @@ namespace BDPol
             this.label1.TabIndex = 1;
             this.label1.Text = "Участок";
             // 
-            // textBox1
+            // Plot
             // 
-            this.textBox1.Location = new System.Drawing.Point(46, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(499, 38);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Plot.Location = new System.Drawing.Point(46, 115);
+            this.Plot.Name = "Plot";
+            this.Plot.Size = new System.Drawing.Size(499, 38);
+            this.Plot.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -217,7 +218,6 @@ namespace BDPol
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Пациент";
             this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // comboBox2
             // 
@@ -315,7 +315,6 @@ namespace BDPol
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(453, 38);
             this.textBox4.TabIndex = 2;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -330,7 +329,6 @@ namespace BDPol
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(453, 38);
             this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // tabPage3
             // 
@@ -424,7 +422,6 @@ namespace BDPol
             this.label6.Size = new System.Drawing.Size(138, 32);
             this.label6.TabIndex = 3;
             this.label6.Text = "Фамилия";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // textBox8
             // 
@@ -549,7 +546,6 @@ namespace BDPol
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Тип";
             this.tabPage5.UseVisualStyleBackColor = true;
-            this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // button15
             // 
@@ -669,7 +665,7 @@ namespace BDPol
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Plot;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
