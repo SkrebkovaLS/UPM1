@@ -137,7 +137,7 @@ namespace BDPol
             finally
             {
                 connection.Close();
-            }
+            } 
             GetPat();
         }
         //Метод 
@@ -171,5 +171,46 @@ namespace BDPol
             textBox4.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
             textBox5.Text = dataGridView2.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(conStr);
+            try
+            {
+                connection.Open();
+                cmd = new SqlCommand(String.Format("DELETE FROM Policlinika.Patient WHERE PatientID={0}", dataGridView1.SelectedRows[0].Cells[0].Value), connection);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            GetPat();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            connection = new SqlConnection(conStr);
+            try
+            {
+                connection.Open();
+                cmd = new SqlCommand(String.Format("UPDATE Policlinika.Patient SET PatientName='{0}', PatientSurname = '{1}', PatientPatronymic = '{2}', Phone = '{3}', WHERE PatientID={1}", Plot.Text, dataGridView1.SelectedRows[0].Cells[0].Value), connection);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            GetPat();
+        }
+    
     }
 }
